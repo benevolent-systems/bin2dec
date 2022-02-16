@@ -45,6 +45,7 @@ function getInputValue(){
     // console.info(inputVal[i]);
     if (inputVal[i] > 1) {
       // console.log("whoopsie")
+      document.getElementById("binaryValue").innerHTML = "";
       document.getElementById("error").innerHTML = "That's not a 1 or 0 is it? Muppet.";
     } else {
       document.getElementById("error").innerHTML = "";
