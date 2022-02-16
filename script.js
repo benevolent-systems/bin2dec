@@ -29,6 +29,7 @@ input.addEventListener("keyup", function(event) {
   }
 });
 
+
 function getInputValue(){
   // Selecting the input element and get its value 
   var inputVal = document.getElementById("binaryNumberEntry").value;
@@ -41,4 +42,14 @@ function getInputValue(){
   // alert(inputVal);
   document.getElementById("binaryValue").innerHTML = converted;
   
+  for (var i = 0; i < inputVal.length; i++) {
+    // console.info(inputVal[i]);
+    if (inputVal[i] > 1) {
+      // console.log("whoopsie")
+      document.getElementById("binaryValue").innerHTML = "That's not a 1 or 0 is it? Muppet.";
+    }
+  }
+
+
+
 }
