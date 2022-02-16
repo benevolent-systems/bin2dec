@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: "Courier New", monospace;
+  font-size: 1.6rem;
+  background-color: aquamarine;
+}
+
+label {
+  font-family: "Courier New", monospace;
+  font-size: medium;
+}
+
+input {
+  margin: 20px 0px 10px 0px;
+  font-family: "Courier New", monospace;
+}
+
+button {
+  font-family: "Courier New", monospace;
+}
+
+p {
+  font-size: medium;
+}
+
+h1 {
+  font-size: larger
+}
+
+h2,
+h3,
+h4,
+h5
+h6,
+
+figure {
+  margin: 0;
+}
+
+#binaryValue {
+  font-family: "Courier New", monospace;
+  font-size: 5rem;
+  font-weight: 600;
+  margin-top: 0%;
+}
+
+.siteheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.site-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 5rem;
+  font-weight: 200;
+}
+
+.siteheader:after {
+  display: block;
+  margin: 1rem 0;
+  content: "⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍";
+}
+
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: antiquewhite;
+}
+
+.page-header {
+  margin-bottom: 3rem;
+}
+
+.page-header__heading {
+  margin-top: -1rem;
+  text-align: center;
+}
+
+.page-header:after {
+  margin: 4rem auto;
+  display: block;
+  content: "";
+  border-bottom: 3px solid black;
+  width: 4rem;
+}
+
+.sitefooter {
+  margin-top: 8rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  background: black;
+  color: white;
+}
