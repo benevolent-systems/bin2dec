@@ -57,13 +57,13 @@ figure {
   padding: 1rem;
 }
 
-.site-title {
+/* .site-title {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-family: "Oswald", sans-serif;
   font-size: 5rem;
   font-weight: 200;
-}
+} */
 
 .siteheader:after {
   display: block;
@@ -77,9 +77,10 @@ figure {
   align-items: center;
   padding: 1rem;
   background-color: antiquewhite;
+  height: 15rem;
 }
 
-.page-header {
+/* .page-header {
   margin-bottom: 3rem;
 }
 
@@ -103,4 +104,4 @@ figure {
   justify-content: center;
   background: black;
   color: white;
-}
+} */

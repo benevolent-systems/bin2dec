@@ -14,12 +14,14 @@
       </header>
     <section class="maincontent"></div>  
       <label for="binaryNumberEntry">Enter binary below (a series of up to eight 1's and 0's):</label>
-      <input type="text" placeholder="Enter 1's and 0's" id="binaryNumberEntry" min="0" max="1" required maxlength="8">
+      <!-- Text field that accepts up to 8 characters -->
+      <input type="text" placeholder="Enter 1's and 0's" id="binaryNumberEntry" maxlength="8">
+      <!-- Button with onenter funcitonality attached via script.js -->
       <button id="myBtn" type="button" onclick="getInputValue();">Set Value</button>
       <p>Here's ya number ya filthy swine</p>
+      <!-- the empty h1 & p to contain the value returned and error messages -->
       <h1 id="binaryValue"></h1>
       <p id="error"></p>
-
     </section>
    </main>
   </body>

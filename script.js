@@ -6,14 +6,7 @@
  * - Add an event listener to a specific key on the keyboard to change the background color of the whole page - from dark to light and back again.
  */
 
-// function bin2dec(input) {
-//   input = document.getElementById(binaryNumberEntry)
-//   console.log(input)
-// }
 
-// var binary = bin2dec;
-// var digit = parseInt(bin2dec, 2);
-// console.log(digit);
 
 //use the enter key to trigger button
 var input = document.getElementById("binaryNumberEntry");
@@ -29,25 +22,30 @@ input.addEventListener("keyup", function(event) {
   }
 });
 
-function getInputValue(){
   // Selecting the input element and get its value 
-  var inputVal = document.getElementById("binaryNumberEntry").value;
+  function getInputValue(){
+    var inputVal = document.getElementById("binaryNumberEntry").value;
   
   // Converting to decimal
   converted = parseInt(inputVal, 2);
-  console.log(converted);
+  // console.log(converted);
 
   // Displaying the value
   // alert(inputVal);
   document.getElementById("binaryValue").innerHTML = converted;
   
+  // A for loop to check each character input to see if over > 1.
+  // Display an error message if character is >= 2
   for (var i = 0; i < inputVal.length; i++) {
     // console.info(inputVal[i]);
     if (inputVal[i] > 1) {
       // console.log("whoopsie")
+      // clears the returned number<p>
       document.getElementById("binaryValue").innerHTML = "";
+      // updates the error <p> with message
       document.getElementById("error").innerHTML = "That's not a 1 or 0 is it? Muppet.";
     } else {
+      // clears the error message <p>
       document.getElementById("error").innerHTML = "";
     }
   }
